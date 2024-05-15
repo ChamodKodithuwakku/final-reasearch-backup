@@ -1,0 +1,56 @@
+.song-card {
+    padding-top: 5px;
+    border: 0px solid #ccc;
+    padding: 1px;
+    margin: 1px;
+    transition: background-color 0.3s;
+}
+
+.song-card:hover {
+    background-color: #f0f0f0;
+}
+
+.card-1 {
+    background-color: #ead8a6; /* yellow */
+}
+
+.card-2 {
+    background-color: #ea998d; /* tomato */
+}
+
+.card-3 {
+    background-color: #b1d0e3; /* sky blue */
+}
+
+.container {
+    display: flex;
+}
+
+.webcam-column,
+.songlist-column {
+    padding: 20px;
+}
+
+/* Default styles */
+.webcam-column {
+    flex: 1; /* Take up remaining space */
+}
+
+.songlist-column {
+    flex: 1; /* Take up remaining space */
+}
+
+/* Media query for devices with a maximum width of 768px (e.g., tablets and smartphones in portrait mode) */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Display columns vertically on smaller devices */
+    }
+
+    .webcam-column,
+    .songlist-column {
+        flex: 1; /* Take up full width on smaller devices */
+        width: auto; /* Reset width to auto to allow flexbox to determine width */
+    }
+}
+
+
